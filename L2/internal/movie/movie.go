@@ -48,9 +48,9 @@ func WriteResultsToFile(results []Movie, fileName string) error {
 
 	defer file.Close()
 
-	file.WriteString(fmt.Sprintf("%50s %8s %8s\n", "Name", "Year", "Rating"))
-	for _, r := range results {
-		file.WriteString(fmt.Sprintf("%50s %8d %8.2f\n", r.Name, r.Year, r.Rating))
+	file.WriteString(fmt.Sprintf("%3s %50s %8s %8s\n", "No.", "Name", "Year", "Rating"))
+	for i, r := range results {
+		file.WriteString(fmt.Sprintf("%3d %50s %8d %8.2f\n", i+1, r.Name, r.Year, r.Rating))
 	}
 
 	return nil

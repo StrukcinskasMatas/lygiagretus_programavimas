@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	moviesData, err := movie.ReadMoviesJsonData(config.AllDataPassFileName)
+	moviesData, err := movie.ReadMoviesJsonData(config.HalfDataPassFileName)
 	if err != nil {
 		panic(err)
 	}

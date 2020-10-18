@@ -7,10 +7,10 @@ import (
 	"github.com/StrukcinskasMatas/lygiagretus_programavimas/L2/internal/movie"
 )
 
-func Start(dataRequestChannel chan<- bool, dateReceiveChannel <-chan *movie.Movie, resultsChannel chan<- *movie.Movie, number int) {
+func Start(dataRequestChannel chan<- int, dateReceiveChannel <-chan *movie.Movie, resultsChannel chan<- *movie.Movie, number int) {
 	finished := false
 	for !finished {
-		dataRequestChannel <- false
+		dataRequestChannel <- number
 		response := <-dateReceiveChannel
 
 		if response != nil {

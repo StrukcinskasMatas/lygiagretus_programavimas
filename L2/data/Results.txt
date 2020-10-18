@@ -1,21 +1,41 @@
 No.                                               Name     Year   Rating
-  1                          Secret Life of Words, The     1963     4.84
-  2                                      Better Things     2012     4.83
-  3                                         Swept Away     2006     4.77
-  4                                        Dying Young     2004     4.64
-  5                                          Dog Pound     1990     4.37
-  6        Message to Love: The Isle of Wight Festival     2000     4.31
-  7                         Murder on a Sunday Morning     2003     4.22
-  8                       Man Who Haunted Himself, The     2008     4.14
-  9                        Suitor, The (Soupirant, Le)     2001     3.57
- 10                                         Mixed Nuts     2010     3.55
- 11              Woman's Face, A (En kvinnas ansikte)      1995     3.38
- 12                             The Do-Deca-Pentathlon     1994     3.34
- 13                                    Man I Love, The     1992     3.32
- 14                                       Jungle Fever     2011     3.25
- 15                                  Christmas Holiday     1992     3.20
- 16                                       Toy Soldiers     1993     3.12
- 17                                         alaskaLand     2012     2.77
- 18                                Deadly Surveillance     1995     2.72
- 19                                            Expired     2005     2.56
- 20                                          The Thief     2007     2.51
+  1                       Kandahar (Safar e Ghandehar)     2010     4.96
+  2                                          Supernova     2008     4.90
+  3                                  Wrath of God, The     2002     4.61
+  4                                    Grace of Monaco     2011     4.42
+  5                                      Guarding Tess     2001     4.39
+  6  Russians Are Coming, the Russians Are Coming, The     2002     4.04
+  7                            Hans Christian Andersen     2007     3.69
+  8                        Four Minutes (Vier Minuten)     2005     3.61
+  9                                        Black Angel     2009     3.42
+ 10                                            Hit Man     2002     3.08
+ 11                                 Samson and Delilah     1992     3.06
+ 12                                          Altiplano     1993     2.97
+ 13                                 Damned United, The     1993     2.86
+ 14                                            El Lobo     2010     2.85
+ 15                                 Prison of the Dead     2001     2.75
+ 16                                    Vesna va veloce     2004     2.71
+ 17                                            Curdled     1996     2.69
+ 18                                      Kahlekuningas     1998     2.68
+ 19  Stormbreaker (Alex Rider: Operation Stormbreaker)     1993     2.68
+ 20                                          Blackball     1999     2.68
+ 21                         Good Old Fashioned Orgy, A     2006     2.68
+ 22                                         China Moon     1989     2.67
+ 23                                          Trip, The     1993     2.67
+ 24                I Now Pronounce You Chuck and Larry     1996     2.67
+ 25                                        Queen Sized     2009     2.67
+ 26                                             Himizu     2004     2.66
+ 27      Turtle's Tale 2: Sammy's Escape from Paradise     1984     2.65
+ 28                                    Fire Down Below     1986     2.65
+ 29                                         Lady Oscar     2006     2.65
+ 30                                   100 Bloody Acres     2008     2.64
+ 31                             Cyborg 2: Glass Shadow     1997     2.64
+ 32                                         Bells, The     2009     2.64
+ 33                         Take Aim at the Police Van     2012     2.64
+ 34                                  Mr. & Mrs. Bridge     1992     2.63
+ 35                      Mandela: Long Walk to Freedom     1998     2.63
+ 36                                      Enduring Love     2012     2.63
+ 37                                        When I Walk     2012     2.62
+ 38                              Good Man in Africa, A     2003     2.60
+ 39                                   Mortified Nation     2001     2.60
+ 40                        Zombies of the Stratosphere     2000     2.51

@@ -8,4 +8,4 @@ var ResultsFileName = "C:/Personal/KTU/5 Semestras/Lygiagretus programavimas/L2/
 var MinMovieRating = 2.5
 var DataCount = 40
 var AllowedDataCount = DataCount / 2
-var WorkerThreadCount = 4 // 2 <= WorkerThreadCount <= DaataCount / 4
+var WorkerThreadCount = 8 // 2 <= WorkerThreadCount <= DaataCount / 4

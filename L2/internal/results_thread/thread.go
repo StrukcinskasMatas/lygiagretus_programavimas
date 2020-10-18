@@ -7,10 +7,10 @@ import (
 	"github.com/StrukcinskasMatas/lygiagretus_programavimas/L2/internal/movie"
 )
 
-var resultsStorage []movie.Movie
-var workersFinished int
-
 func Start(workerChannel <-chan *movie.Movie, mainChannel chan<- []movie.Movie) {
+	var resultsStorage []movie.Movie
+	var workersFinished int
+
 	for workersFinished != config.WorkerThreadCount {
 		result := <-workerChannel
 		if result != nil {

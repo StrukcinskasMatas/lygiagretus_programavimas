@@ -12,14 +12,14 @@ import (
 )
 
 func main() {
-	moviesData, err := movie.ReadMoviesJsonData(config.HalfDataPassFileName)
+	moviesData, err := movie.ReadMoviesJsonData(config.AllDataPassFileName)
 	if err != nil {
 		panic(err)
 	}
 
 	mainToDataChannel := make(chan *movie.Movie)
 	dataToWorkersChannel := make(chan *movie.Movie)
-	workersToDataChannel := make(chan bool)
+	workersToDataChannel := make(chan int)
 	workersToResultsChannel := make(chan *movie.Movie)
 	resultsToMainChannel := make(chan []movie.Movie)
 
@@ -32,7 +32,8 @@ func main() {
 
 	startTime := time.Now()
 	for _, movie := range moviesData {
-		mainToDataChannel <- &movie
+		movieCopy := movie // https://stackoverflow.com/questions/49123133/sending-pointers-over-a-channel/49125045#49125045
+		mainToDataChannel <- &movieCopy
 	}
 
 	// signaling that we've finished

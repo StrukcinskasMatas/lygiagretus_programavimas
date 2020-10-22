@@ -1,0 +1,92 @@
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+func main() {
+	var wg sync.WaitGroup
+	wg.Add(3)
+
+	var newMonitor Monitor
+	newMonitor.Eilute = "*"
+
+	for _, simbolis := range "ABC" {
+		go func(char string, m *Monitor) {
+			defer wg.Done()
+			for m.addToEilute(char) != true {}
+			}(string(simbolis), &newMonitor)
+	}
+
+	for !shouldEnd(newMonitor.Eilute) {
+		fmt.Println(newMonitor.Eilute)
+	}
+
+	wg.Wait()
+	fmt.Println(newMonitor.Eilute)
+	fmt.Println("Done")
+}
+
+type Monitor struct {
+	Mtx sync.Mutex
+	Eilute string
+}
+
+func (m *Monitor) addToEilute(char string) bool {
+	m.Mtx.Lock()
+	defer m.Mtx.Unlock()
+
+	if (shouldEnd(m.Eilute)) {
+		return true
+	}
+
+	if !isVowel(char) {
+		if !containsThreeVovels(m.Eilute) {
+			return false
+		}
+	}
+
+	m.Eilute = m.Eilute + char
+	return false
+}
+
+func containsThreeVovels(eilute string) bool {
+	vCount := 0
+	for _, char := range eilute {
+		if (isVowel(string(char))) {
+			vCount++
+		}
+	}
+
+	return vCount >= 3
+}
+
+func isVowel(char string) bool {
+	for _, vowel := range "EYUIOA" {
+		if char == string(vowel) {
+			return true
+		}
+	}
+	return false
+}
+
+func shouldEnd(eilute string) bool {
+	countA := 0
+	countB := 0
+	countC := 0
+
+	for _, char := range eilute {
+		if string(char) == "A" {
+			countA++
+		}
+		if string(char) == "B" {
+			countB++
+		}
+		if string(char) == "C" {
+			countC++
+		}
+	}
+
+	return countA == 15 || countB == 15 || countC == 15
+}
